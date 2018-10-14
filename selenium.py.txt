@@ -10,6 +10,8 @@ browser.get('https://github.com/')
 elem = browser.find_element_by_link_text("Sign in")
 elem.click()
 elem = browser.find_element_by_id("login_field")
+username = input("username - ")
+password = input("password - "
 elem.send_keys(username)
 elem = browser.find_element_by_id("password")
 elem.send_keys(password + Keys.RETURN)
@@ -19,11 +21,9 @@ elem = browser.find_element_by_name("q")
 #elem = browser.find_element_by_xpath('//input[@name="q"]')
 #elem = browser.find_element_by_css_selector('input.form-control.header-search-input.js-search-site-focus')
 #driver.findElement(By.xpath("//input[@id='invoice_supplier_id'])).setAttribute("value", "your value")
-elem.send_keys('hponeview' + Keys.ENTER)
 
+elem.send_keys('seleniumhq' + Keys.RETURN)
 
-#elem.send_keys('seleniumhq' + Keys.RETURN)
-
-#browser.close()
+browser.close()
 
 #browser.quit()"//input[@name='username']"
