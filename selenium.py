@@ -20,7 +20,7 @@ browser.implicitly_wait(2)
 elem = browser.find_element_by_name("q")
 #elem = browser.find_element_by_xpath('//input[@name="q"]')
 #elem = browser.find_element_by_css_selector('input.form-control.header-search-input.js-search-site-focus')
-#driver.findElement(By.xpath("//input[@id='invoice_supplier_id'])).setAttribute("value", "your value")
+#browser.findElement(By.xpath("//input[@id='invoice_supplier_id'])).setAttribute("value", "your value")
 
 elem.send_keys('seleniumhq' + Keys.RETURN)
 
