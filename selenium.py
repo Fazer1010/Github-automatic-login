@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+# we can import Chromium webdriver and get those in the as the browser
 
 browser = webdriver.Firefox()
 username=""
